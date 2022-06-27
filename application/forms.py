@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SubmitField
+from wtforms import StringField, IntegerField, SelectField, SubmitField
 
 class BookForm(FlaskForm):
     book_name = StringField("Name of book")
@@ -10,5 +10,12 @@ class BookForm(FlaskForm):
 
 class ReviewForm(FlaskForm):
     book_id = IntegerField("What is the id of the book you are reviewing?")
-    rating = IntegerField("What rating would you give this book out of 5?")
+    rating = SelectField("What rating would you give this book out of 5?", choices [
+        ("1", "1"),
+        ("2", "2"),
+        ("3", "3"),
+        ("4", "4"),
+        ("5", "5")
+    ])
     review = StringField("Please write a short review of this book")
+    submit = SubmitField("Submit")

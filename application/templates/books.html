@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+<br>
+{% for book in books %}
+<p>Title: {{ book.book_name }} </p>
+<p>Author: {{ book.author_name }}</p>
+<p>Number of Pages: {{ book.pages }}</p>
+<p>Genre: {{ book.genre }}</p>
+{% endfor %}
+{% endblock body %}
