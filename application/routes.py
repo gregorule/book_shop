@@ -29,7 +29,23 @@ def addBooks():
             return redirect(url_for('readBooks'))
     return render_template('addbook.html', form=form)
 
-
+@app.route('/update/<int:id>', methods= ['GET', 'POST'])
+def updateBooks(id):
+    form = BookForm()
+    book = Books.query.get(id)
+    if form.validate_on_submit():
+        book.book_name = form.book_name.data
+        book.author_name = form.author_name.data
+        book.pages = form.pages.data
+        book.genre = form.genre.data
+        db.session.commit()
+        return redirect(url_for('readBooks'))
+    elif request.method == 'GET':
+        form.book_name.data = book.book_name
+        form.author_name.data = book.author_name
+        form.pages.data = book.pages
+        form.genre.data = book.genre
+    return render_template('updateBooks.html', form=form)
 
 @app.route('/delete/<int:id>')
 def deleteBooks(id):
