@@ -13,6 +13,11 @@ def readBooks():
     book = Books.query.all()
     return render_template('books.html', books=book)
 
+@app.route('/reviews')
+def readReviews():
+    review = Reviews.query.all()
+    return render_template('reviews.html', reviews=review)
+
 @app.route('/add', methods=['GET','POST'])
 def addBooks():
     form = BookForm()

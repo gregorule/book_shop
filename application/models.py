@@ -12,3 +12,4 @@ class Reviews(db.Model):
     book_id = db.Column(db.Integer, db.ForeignKey('books.book_id'), nullable=False)
     rating = db.Column(db.Integer, nullable=False)
     review = db.Column(db.String(200), nullable=False)
+    book_ref = db.relationship('Books', backref='book_ref')

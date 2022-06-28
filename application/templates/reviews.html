@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<br>
+{% for review in reviews %}
+<br>
+<p>Title: {{ review.book_ref.book_name }}</p>
+<p>Rating: {{ review.rating }}</p>
+<p>Review: {{ review.review }}</p>
+
+{% endfor %}
+
+{% endblock body %}
