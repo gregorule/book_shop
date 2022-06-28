@@ -89,3 +89,10 @@ def deleteBooks(id):
     db.session.delete(book)
     db.session.commit()
     return redirect(url_for('readBooks'))
+
+@app.route('/deleteReview/<int:id>')
+def deleteReviews(id):
+    review = Reviews.query.get(id)
+    db.session.delete(review)
+    db.session.commit()
+    return redirect(url_for('readReviews'))
