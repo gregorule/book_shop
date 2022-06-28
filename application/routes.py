@@ -28,3 +28,12 @@ def addBooks():
             db.session.commit()
             return redirect(url_for('readBooks'))
     return render_template('addbook.html', form=form)
+
+
+
+@app.route('/delete/<int:id>')
+def deleteBooks(id):
+    book = Books.query.get(id)
+    db.session.delete(book)
+    db.session.commit()
+    return redirect(url_for('readBooks'))

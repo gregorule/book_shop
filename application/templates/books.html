@@ -3,9 +3,13 @@
 <br>
 {% for book in books %}
 <br>
+<p>Book ID: {{ book.book_id }} </p>
 <p>Title: {{ book.book_name }} </p>
 <p>Author: {{ book.author_name }}</p>
 <p>Number of Pages: {{ book.pages }}</p>
 <p>Genre: {{ book.genre }}</p>
+<form action="{{ url_for('deleteBooks', id=book.book_id) }}">
+<button type="Submit">Delete Book</button>
+</form>
 {% endfor %}
 {% endblock body %}
