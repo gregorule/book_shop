@@ -1,6 +1,6 @@
 from application import app, db
 from application.models import Books, Reviews
-from application.forms import BookForm ReviewForm
+from application.forms import BookForm, ReviewForm
 from flask import redirect, url_for, render_template, request
 
 @app.route('/')

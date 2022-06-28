@@ -10,7 +10,7 @@ class BookForm(FlaskForm):
 
 class ReviewForm(FlaskForm):
     book_id = IntegerField("What is the id of the book you are reviewing?")
-    rating = SelectField("What rating would you give this book out of 5?", choices [
+    rating = SelectField("What rating would you give this book out of 5?", choices=[
         ("1", "1"),
         ("2", "2"),
         ("3", "3"),
