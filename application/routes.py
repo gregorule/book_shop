@@ -12,3 +12,19 @@ def home():
 def readBooks():
     book = Books.query.all()
     return render_template('books.html', books=book)
+
+@app.route('/add', methods=['GET','POST'])
+def addBooks():
+    form = BookForm()
+    if request.method == 'POST':
+        if form.validate_on_submit():
+            bookData = Books(
+                book_name = form.book_name.data,
+                author_name = form.author_name.data,
+                pages = form.pages.data,
+                genre = form.genre.data
+            )
+            db.session.add(bookData)
+            db.session.commit()
+            return redirect(url_for('readBooks'))
+    return render_template('addbook.html', form=form)
