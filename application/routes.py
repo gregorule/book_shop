@@ -49,6 +49,22 @@ def addReview():
             return redirect(url_for('readReviews'))
     return render_template('addreview.html', form=form)
 
+@app.route('/addReviewTwo/<int:id>', methods=['GET','POST'])
+def addReviewTwo(id):
+    form = ReviewForm()
+    review = Reviews.query.get(id)
+    if request.method == 'POST':
+        if form.validate_on_submit():
+            reviewData = Reviews(
+                book_id = id,
+                rating = form.rating.data,
+                review = form.review.data
+            )
+            db.session.add(reviewData)
+            db.session.commit()
+            return redirect(url_for('readReviews'))
+    return render_template('addreviewtwo.html', form=form)
+
 @app.route('/update/<int:id>', methods= ['GET', 'POST'])
 def updateBooks(id):
     form = BookForm()

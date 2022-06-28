@@ -3,7 +3,8 @@
 <br>
 {% for book in books %}
 <br>
-<p>Title: {{ book.book_name }} </p>
+<p><strong>Title: {{ book.book_name }}</strong></p>
+<p>Book ID: {{ book.book_id }}</p> 
 <p>Author: {{ book.author_name }}</p>
 <p>Number of Pages: {{ book.pages }}</p>
 <p>Genre: {{ book.genre }}</p>
@@ -12,6 +13,9 @@
 </form>
 <form action="{{ url_for('updateBooks', id=book.book_id) }}">
     <button type="Submit">Update Book</button>
+</form>
+<form action="{{ url_for('addReviewTwo', id=book.book_id) }}">
+    <button type="Submit">Review This Book</button>
 </form>
 {% endfor %}
 {% endblock body %}
