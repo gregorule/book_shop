@@ -18,6 +18,11 @@ def readReviews():
     review = Reviews.query.all()
     return render_template('reviews.html', reviews=review)
 
+@app.route('/readReviewsTwo/<int:id>')
+def readReviewsTwo(id):
+    review = Reviews.query.get(id)
+    return render_template('readReviewTwo.html', reviews=review)
+
 @app.route('/add', methods=['GET','POST'])
 def addBooks():
     form = BookForm()
