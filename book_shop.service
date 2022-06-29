@@ -1,0 +1,16 @@
+[Unit]
+Description=Book Shop Service
+
+[Service]
+User=grego
+WorkingDirectory=/home/grego/book_shop
+Environment=DATABASE_URI=sqlite:///data.db
+ExecStart=/bin/sh \
+    -c 'python3 -m venv venv &&\
+    . ./venv/bin/activate &&\
+    pip3 install -r requirements.txt &&\
+    python3 create.py &&\
+    python3 app.py'
+
+[Install]
+WantedBy=multi-user.target
