@@ -2,10 +2,9 @@
 Description=Book Shop Service
 
 [Service]
-User=jenkins
-WorkingDirectory=/home/jenkins/.jenkins/workspace/book_shop
+User=grego
+WorkingDirectory=/home/grego/book_shop
 Environment=DATABASE_URI=sqlite:///data.db
-Environment=SECRET_KEY=SECRET_KEY
 ExecStart=/bin/sh \
     -c 'python3 -m venv venv &&\
     . ./venv/bin/activate &&\
