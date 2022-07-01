@@ -65,7 +65,7 @@ class TestAdd(TestBase):
         assert len(Books.query.all()) == 2
         
 <h1>Entity Relationship Diagram</h1>
-My original ERD design was kept basic to make sure the MVP was met.
+My original ERD design was kept basic to make sure the MVP was met:
 ![2022-06-23 (2)](https://user-images.githubusercontent.com/104358226/176905156-31e12c53-3387-4146-9e2a-e91be62a2fe5.png)
 
 For future implications, the ERD would look something like this:
