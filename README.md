@@ -12,13 +12,16 @@ Looking forward, trying to set up the application as a systemd server would be i
 
 <h1>Getting Started</h1>
 Prerequisites:
+
 This application was created using a virtual machine from GCP connected to Visual Studio Code by ssh key configuration. An account for GCP or equivelant will be needed to run this as well as downloading VSCode.
 GCP - https://cloud.google.com
 VSCode downlaod: https://code.visualstudio.com/download
 
 
 Installation:
+
 Setting up in VSCode:
+
   Open a new bash terminal and run the command 'ssh-keygen'
   Delete the known hosts by running 'rm .ssh/known_hosts'
   View the ssh key by running 'cat .ssh/id_rsa.pub
@@ -27,6 +30,7 @@ Setting up in VSCode:
     Insert 'jenkins ALL=(ALL:ALL) NOPASSWD:ALL' under Sudo User
   
 When setting up the VM:
+
   ensure that the base disk is Ubuntu with minumum 20.04 LTS.
   machine type minimum e2-medium.
   firewall rules allow port 5000 and 8080 to be open.
