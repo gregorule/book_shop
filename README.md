@@ -80,6 +80,10 @@ For future implications, the ERD would look something like this:
 <h1>Kanban Board on Jira</h1>
 https://grr.atlassian.net/jira/software/projects/PC/boards/2
 
+<h1>Risk Assessment</h1>
+
+![2022-07-01 (5)](https://user-images.githubusercontent.com/104358226/176912381-da4d40c3-50a0-4437-ac3c-5e3c6484ffd5.png)
+
 
 <h1>Authors</h1>
 Gregor Rule
