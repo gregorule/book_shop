@@ -36,15 +36,15 @@ When setting up the VM:
   firewall rules allow port 5000 and 8080 to be open.
   Insert the ssh key into the network key.
   
-Once VSCode and VM are connected via ssh key, clone down this despository git@github.com:gregorule/book_shop.git.
-Use the setup.sh file to update the environment but running './setup.sh'.
-Run 'chmod +x jenkins.sh' and './jenkins.sh' to install Jenkins.
-Once the initial password is displayed (can take 5-10 mins) copy it.
-Put the external IP of the VM into a new tab with ':8080' after it.
-Insert the initial password.
-Install suggested plugins.
-Create a new job on Jenkins making sure to add the git-hub repository where necessary.
-Copy the contents of forJenkins.txt and add it into build shell.
+Once VSCode and VM are connected via ssh key, clone down this despository git@github.com:gregorule/book_shop.git.<br>
+Use the setup.sh file to update the environment but running './setup.sh'.<br>
+Run 'chmod +x jenkins.sh' and './jenkins.sh' to install Jenkins.<br>
+Once the initial password is displayed (can take 5-10 mins) copy it.<br>
+Put the external IP of the VM into a new tab with ':8080' after it.<br>
+Insert the initial password.<br>
+Install suggested plugins.<br>
+Create a new job on Jenkins making sure to add the git-hub repository where necessary.<br>
+Copy the contents of forJenkins.txt and add it into build shell.<br>
 Use the external IP of the VM again in a new tab but with ':5000' at the end instead to use the app.
 
 <h1>Testing</h1>
