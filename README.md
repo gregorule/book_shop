@@ -64,6 +64,15 @@ class TestAdd(TestBase):
         assert Books.query.filter_by(book_name="James and the Giant Peach").first().book_id == 2
         assert len(Books.query.all()) == 2
         
+<h1>Entity Relationship Diagram</h1>
+My original ERD design was kept basic to make sure the MVP was met.
+![2022-06-23 (2)](https://user-images.githubusercontent.com/104358226/176905156-31e12c53-3387-4146-9e2a-e91be62a2fe5.png)
+
+For future implications, the ERD would look something like this:
+![2022-07-01 (4)](https://user-images.githubusercontent.com/104358226/176905266-014692b5-8c6f-4a0e-bc96-12e9020b5843.png)
+
+
+
 
 <h1>Authors</h1>
 Gregor Rule
