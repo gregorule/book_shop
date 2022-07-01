@@ -36,7 +36,7 @@ When setting up the VM:
   firewall rules allow port 5000 and 8080 to be open.
   Insert the ssh key into the network key.
   
-Once VSCode and VM are connected via ssh key, clone down this despository git@github.com:gregorule/book_shop.git.<br>
+Once VSCode and VM are connected via ssh key, clone down this despository https://github.com/gregorule/book_shop.git.<br>
 Use the setup.sh file to update the environment but running './setup.sh'.<br>
 Run 'chmod +x jenkins.sh' and './jenkins.sh' to install Jenkins.<br>
 Once the initial password is displayed (can take 5-10 mins) copy it.<br>
