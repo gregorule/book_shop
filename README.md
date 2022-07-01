@@ -1,7 +1,7 @@
 Coverage 98%
 # CRUD Application for a book shop review site.
 
-##Overview
+#Overview
 This application for a book review site allows user to add books to the database, read them from the database, update the books in the database or delete them from the dadtabase. It also allows the ability to add, read, update and delete reviews they have of the books in the database.
 
 This was for a QA project week. We were tasked with creating a CRUD application which utilises supporting tools, methodologies and technologies that have been taught throught the course so far. It must show our knowledge on Project Management, Python Fundamentals, Python Testing, Git, Basic Linux, Python Web Development, Continuous Integration, Cloud Fundamentals and Databases. 
@@ -10,7 +10,7 @@ Challenges that were faced came mostly in the Jenkins side of the application. I
 
 Looking forward, trying to set up the application as a systemd server would be ideal to ensure the build finishes. Furthermore, I would like to expand this application further. Adding a customers table (with user identification) and orders table allow the book shop not only to provide reviews to books but also sell on the website. 
 
-##Getting Started
+#Getting Started
 Prerequisites:
 This application was created using a virtual machine from GCP connected to Visual Studio Code by ssh key configuration. An account for GCP or equivelant will be needed to run this as well as downloading VSCode.
 GCP - https://cloud.google.com
@@ -43,7 +43,7 @@ Create a new job on Jenkins making sure to add the git-hub repository where nece
 Copy the contents of forJenkins.txt and add it into build shell.
 Use the external IP of the VM again in a new tab but with ':5000' at the end instead to use the app.
 
-##Testing
+#Testing
 Jenkins will run the integration and unit tests that the application has.
 
 Unit Testing:
@@ -65,10 +65,10 @@ class TestAdd(TestBase):
         assert len(Books.query.all()) == 2
         
 
-##Authors
+#Authors
 Gregor Rule
 
-##Acknowledgments
+#Acknowledgments
 I'd like to that Ryan Wright and Victoria Sacre for their help on this project.
 
 
