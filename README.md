@@ -11,14 +11,14 @@ Challenges that were faced came mostly in the Jenkins side of the application. I
 Looking forward, trying to set up the application as a systemd server would be ideal to ensure the build finishes. Furthermore, I would like to expand this application further. Adding a customers table (with user identification) and orders table allow the book shop not only to provide reviews to books but also sell on the website. 
 
 <h1>Getting Started</h1>
-Prerequisites:
+<strong>Prerequisites:</strong>
 
 This application was created using a virtual machine from GCP connected to Visual Studio Code by ssh key configuration. An account for GCP or equivelant will be needed to run this as well as downloading VSCode.
 GCP - https://cloud.google.com
 VSCode downlaod: https://code.visualstudio.com/download
 
 
-Installation:
+<strong>Installation:</strong>
 
 Setting up in VSCode:
 
@@ -50,14 +50,14 @@ Use the external IP of the VM again in a new tab but with ':5000' at the end ins
 <h1>Testing</h1>
 Jenkins will run the integration and unit tests that the application has.
 
-Unit Testing:
+<strong>Unit Testing:</strong>
 
 class TestViews(TestBase):
     def test_home_get(self):
         response = self.client.get(url_for('home'))
         self.assertEqual(response.status_code, 200)
         
-Integration Testing:
+<strong>Integration Testing:</strong>
 
 class TestAdd(TestBase):
     def test_book_add(self):
