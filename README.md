@@ -70,7 +70,8 @@ class TestAdd(TestBase):
         
 <h1>Entity Relationship Diagram</h1>
 My original ERD design was kept basic to make sure the MVP was met:
-![2022-06-23 (2)](https://user-images.githubusercontent.com/104358226/176905496-2070ced9-c1a3-476c-8582-614dd387039a.png)
+![2022-06-23 (2)](https://user-images.githubusercontent.com/104358226/176912626-b2b3acf2-1848-4ac2-93da-f5c84f157c5d.png)
+
 
 
 
