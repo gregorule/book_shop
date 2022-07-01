@@ -2,4 +2,4 @@
 *.db
 application/__pycache__
 .pytest_cache
-*.service
+
