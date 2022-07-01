@@ -67,13 +67,14 @@ class TestAdd(TestBase):
 <h1>Entity Relationship Diagram</h1>
 My original ERD design was kept basic to make sure the MVP was met:
 ![2022-06-23 (2)](https://user-images.githubusercontent.com/104358226/176905496-2070ced9-c1a3-476c-8582-614dd387039a.png)
-![2022-06-23 (2)](https://user-images.githubusercontent.com/104358226/176905761-2ac445dc-29f0-4691-b373-42628524df3f.png)
+
 
 
 For future implications, the ERD would look something like this:
 ![2022-07-01 (4)](https://user-images.githubusercontent.com/104358226/176905266-014692b5-8c6f-4a0e-bc96-12e9020b5843.png)
 
-
+<h1>Kanban Board on Jira</h1>
+https://grr.atlassian.net/jira/software/projects/PC/boards/2
 
 
 <h1>Authors</h1>
