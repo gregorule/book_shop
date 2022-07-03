@@ -1,3 +1,5 @@
 /venv
 *.db
 application/__pycache__
+.pytest_cache
+
