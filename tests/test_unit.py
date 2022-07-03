@@ -71,10 +71,11 @@ class TestViews(TestBase):
     def test_updateReviews_get(self):
         response = self.client.get(url_for('updateReviews', id=1))
         self.assertEqual(response.status_code, 200)
-        
+    '''       
     def test_deleteBooks_get(self):
         response = self.client.get(url_for('deleteBooks', id=1))
         self.assertEqual(response.status_code, 200)
+    '''
     def test_deleteReviews_get(self):
         response = self.client.get(url_for('deleteReviews', id=1))
         self.assertEqual(response.status_code, 302)
@@ -125,13 +126,14 @@ class TestUpdate(TestBase):
         assert len(Reviews.query.all()) == 1
 
 class TestDelete(TestBase):
+    '''
     def test_book_delete(self):
         response = self.client.get(
             url_for('deleteBooks',id=1),
             data = dict(book_name="Test",author_name="Test",pages=123,genre="Test")
         )
         assert len(Books.query.all()) == 1
-
+    '''
     def test_review_delete(self):
         response = self.client.get(
             url_for('deleteReviews',id=1),

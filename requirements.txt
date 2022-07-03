@@ -3,7 +3,7 @@ flask_sqlalchemy
 pymysql
 flask_wtf
 wtforms
+flask_testing
 pytest
 pytest-cov
-flask_testing
-gunicorn
+
