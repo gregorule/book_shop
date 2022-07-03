@@ -1,9 +1,25 @@
 <html>
+    <head>
+        <style>
+            body {
+          margin: 25;
+          font-family: "Helvetica ";
+          font-size: large;
+          background-color: #49EAC3;
+          text-align: center;
+          
+        }
+
+        
+        </style>
+    </head>
     <body>
         <h1>Book Reviews</h1>
-        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('home') }}">Home</a><br>
         <a href="{{ url_for('readBooks') }}">Book List</a>
-        <a href="{{ url_for('addBooks') }}">Add Book</a>
+        <a href="{{ url_for('addBooks') }}">Add Book</a>&nbsp&nbsp
+        <a href="{{ url_for('readReviews') }}">Reviews</a>&nbsp&nbsp
+        <a href="{{ url_for('addReview') }}">Add Review</a>&nbsp&nbsp
         {% block body %}
         {% endblock body %}
     </body>

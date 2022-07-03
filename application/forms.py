@@ -18,4 +18,5 @@ class ReviewForm(FlaskForm):
         ("5", "5")
     ])
     review = StringField("Please write a short review of this book")
+    book_ref = BookForm.book_name
     submit = SubmitField("Submit")
