@@ -1,3 +1,4 @@
+#!/bin/bash
 export ${DATABASE_URI}
 export ${SECRET_KEY}
 python3 -m venv venv
