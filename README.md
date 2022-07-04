@@ -13,8 +13,8 @@ Looking forward, trying to set up the application as a systemd server would be i
 <h1>Getting Started</h1>
 <strong>Prerequisites:</strong>
 
-This application was created using a virtual machine from GCP connected to Visual Studio Code by ssh key configuration. An account for GCP or equivelant will be needed to run this as well as downloading VSCode.
-GCP - https://cloud.google.com
+This application was created using a virtual machine from GCP connected to Visual Studio Code by ssh key configuration. An account for GCP or equivelant will be needed to run this as well as downloading VSCode.<br>
+GCP - https://cloud.google.com <br>
 VSCode downlaod: https://code.visualstudio.com/download
 
 
