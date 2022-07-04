@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+<br>
+{% for book in books %}
+<br>
+<p><strong>Title: {{ book.book_name }}</strong></p>
+<p>Book ID: {{ book.book_id }}</p> 
+<p>Author: {{ book.author_name }}</p>
+<p>Number of Pages: {{ book.pages }}</p>
+<p>Genre: {{ book.genre }}</p>
+<form action="{{ url_for('deleteBooks', id=book.book_id) }}">
+    <button type="Submit">Delete Book</button>
+</form>
+<form action="{{ url_for('updateBooks', id=book.book_id) }}">
+    <button type="Submit">Update Book</button>
+</form>
+<form action="{{ url_for('readReviewsTwo', id=book.book_id) }}">
+    <button type="Submit">Read Reviews For This Book</button>
+</form>
+<form action="{{ url_for('addReviewTwo', id=book.book_id) }}">
+    <button type="Submit">Review This Book</button>
+</form>
+{% endfor %}
+{% endblock body %}
