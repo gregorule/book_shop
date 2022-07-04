@@ -22,19 +22,19 @@ VSCode downlaod: https://code.visualstudio.com/download
 
 Setting up in VSCode:
 
-  Open a new bash terminal and run the command 'ssh-keygen'
-  Delete the known hosts by running 'rm .ssh/known_hosts'
-  View the ssh key by running 'cat .ssh/id_rsa.pub
-  Copy this ssh key
-  Run the command 'sudo visudo'
-    Insert 'jenkins ALL=(ALL:ALL) NOPASSWD:ALL' under Sudo User
+  Open a new bash terminal and run the command 'ssh-keygen'<br>
+  Delete the known hosts by running 'rm .ssh/known_hosts'<br>
+  View the ssh key by running 'cat .ssh/id_rsa.pub<br>
+  Copy this ssh key<br>
+  Run the command 'sudo visudo'<br>
+    Insert 'jenkins ALL=(ALL:ALL) NOPASSWD:ALL' under Sudo User<br>
   
 When setting up the VM:
 
-  ensure that the base disk is Ubuntu with minumum 20.04 LTS.
-  machine type minimum e2-medium.
-  firewall rules allow port 5000 and 8080 to be open.
-  Insert the ssh key into the network key.
+  ensure that the base disk is Ubuntu with minumum 20.04 LTS.<br>
+  machine type minimum e2-medium.<br>
+  firewall rules allow port 5000 and 8080 to be open.<br>
+  Insert the ssh key into the network key.<br>
   
 Once VSCode and VM are connected via ssh key, clone down this despository https://github.com/gregorule/book_shop.git.<br>
 Use the setup.sh file to update the environment but running 'chmod +x ./setup.sh' and './setup.sh'.<br>
