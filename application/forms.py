@@ -10,7 +10,7 @@ class BookForm(FlaskForm):
 
 class ReviewForm(FlaskForm):
     book_id = IntegerField("What is the id of the book you are reviewing?")
-    rating = SelectField("What rating would you give this book out of 5?", choices [
+    rating = SelectField("What rating would you give this book out of 5?", choices=[
         ("1", "1"),
         ("2", "2"),
         ("3", "3"),
@@ -18,4 +18,5 @@ class ReviewForm(FlaskForm):
         ("5", "5")
     ])
     review = StringField("Please write a short review of this book")
+    book_ref = BookForm.book_name
     submit = SubmitField("Submit")
