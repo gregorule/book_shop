@@ -37,7 +37,7 @@ When setting up the VM:
   Insert the ssh key into the network key.
   
 Once VSCode and VM are connected via ssh key, clone down this despository https://github.com/gregorule/book_shop.git.<br>
-Use the setup.sh file to update the environment but running 'cmod +x ./setup.sh' and './setup.sh'.<br>
+Use the setup.sh file to update the environment but running 'chmod +x ./setup.sh' and './setup.sh'.<br>
 Run 'chmod +x jenkins.sh' and './jenkins.sh' to install Jenkins.<br>
 Once the initial password is displayed (can take 5-10 mins) copy it.<br>
 Put the external IP of the VM into a new tab with ':8080' after it.<br>
